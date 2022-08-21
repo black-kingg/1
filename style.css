@@ -12,6 +12,9 @@ header{
     background-repeat: no-repeat;
     overflow: hidden;
 }
+#menu{
+    display: none;
+}
 .logo{
     margin: 1rem;
     color: rgb(73, 48, 3);
