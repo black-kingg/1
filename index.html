@@ -23,18 +23,19 @@
               <span class ="material-icons-sharp" id="close">close</span>
             </div>
             
+
+        </nav>
+        <div class="container">
+            <div class="text-box">
+                <h1>YOU ASPIRE</h1>
+                <h3>If you believe in yourself, you can do it confidently</h3></br></br>
+                <div class="btn"><a href="#">BECOME A MODEL</a></div>
+            </div>
             <div class="angel-area">
                 <div class="brown"></div>
                 <img class="angel" src="img/angel.png">
             </div>
-        </nav>
-        
-        <div class="text-box">
-            <h1>YOU ASPIRE</h1>
-            <h3>If you believe in yourself, you can do it confidently</h3></br></br>
-            <div class="btn"><a href="course.html" class="btn">BECOME A MODEL</a></div>
         </div>
-       
         
     </header>
 
@@ -43,7 +44,8 @@
     <script>
       const sideMenu = document.querySelector("#navLinks");
       const menuBtn = document.querySelector("#menu");
-      const closeBtn = document.querySelector("#close")
+      const closeBtn = document.querySelector("#close");
+      var off = document.getElementById("menu");
       
       // show sidebar
       menuBtn.addEventListener('click', () => {
@@ -53,6 +55,10 @@
       // close sidebar
       closeBtn.addEventListener('click', () => {
           sideMenu.style.display = 'none';
+      })
+
+      off.addEventListener('click', function(off) {
+        off.target.classList.toggle('menu-off');
       })
     </script>
 </body>

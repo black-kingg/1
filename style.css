@@ -27,7 +27,7 @@ nav{
     margin: 0 auto;
     gap: 1.8rem;
     grid-template-columns: 14% auto 34%;
-    height: auto;
+    height: 25vh;
 }
 nav .fa{
     display: none;
@@ -47,13 +47,26 @@ nav .fa{
     text-decoration: none;
     font-size: 22px;
 }
-.angel{
+.nav-links ul li a:hover{
+    color: rgb(29, 180, 16);
+    transition: .5s;
+}
+.angel-area{
+    box-sizing: border-box;
     height: 97vh;
 }
+.angel{
+    object-position: right;
+}
+.container{
+    display: flex;
+    gap: 82vh;
+}
 .text-box{
+    width: 30%;
+    height: auto;
     box-sizing: border-box;
     padding-left: 12vh;
-    margin-top: -55vh;
     align-items: left;
 }
 .text-box h1{
@@ -72,6 +85,14 @@ nav .fa{
     background: rgb(160, 106, 7);
     cursor: pointer;
 }
+.btn:hover{
+    box-shadow: 0 2rem 3rem rgb(61, 41, 2);
+    transition: .5s;
+}
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
 #close{
     display: none;
 }
@@ -79,6 +100,10 @@ nav .fa{
     #menu{
         padding-top: 10px;
         padding-left: 220px;
+        display: block;
+    }
+    #menu-off{
+        display: none;
     }
     .nav-links{
         display: none;
@@ -89,7 +114,7 @@ nav .fa{
         right: 0;
         text-align: left;
         z-index: 2;
-        animation: showMenu 400ms ease backwards;
+        animation: sideMenu 400ms ease forwards;
     }
     @keyframes showMenu {
         to{
@@ -97,7 +122,7 @@ nav .fa{
         }
     }
     nav{
-        color: #fff;
+        color: rgb(73, 48, 3);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -115,17 +140,41 @@ nav .fa{
     .nav-links ul li a{
         font-size: 12px;
     }
-    .angel-area{
-        display: none;
+    .angel{
+        display: block;
+        align-self: right;
+        height: 47vh;
     }
     #close{
         cursor: pointer;
         display: block;
     }
+    .container{
+        display: flex;
+        gap: 2vh;
+    }
     .text-box{
+        width: 100%;
+        height: auto;
         box-sizing: border-box;
         padding-left: 7vh;
-        margin-top: 35vh;
         align-items: left;
+    }
+
+    .text-box h1{
+        color: rgb(73, 48, 3);
+    }
+    .text-box h3{
+        color: rgb(139, 92, 3);
+    }
+    .btn{
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 1.3rem;
+        padding: 9px 7px;
+        background: rgb(160, 106, 7);
+        cursor: pointer;
+        font-size: 11.5px;
     }
 }
